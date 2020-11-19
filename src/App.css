@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.App
+{
+    display: grid;
+    margin: 70px;
+    border-radius: 5px;
+    grid-template-areas: 
+    "header header header"
+    "nav conten conten";
+    
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 2fr 10fr;
+
+}
+.header{
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    grid-area: header;
+    background: rgb(8, 47, 82);
+    /* background: rgb(11, 71, 121); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    grid-area: nav;
+    background: rgb(131, 128, 128);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    grid-area: conten;
+    background: rgb(202, 199, 199);
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ss{
+    width: 100%;
+    height: 200px;
+}
+.links{
+    text-decoration: none;
+    color: rgb(27, 30, 32);
+}
+.nav_links{
+    font-size: 30px;
+    
+}
+.nav_links a.active{
+    color: rgb(7, 7, 7);
+    
+    border-radius: 3px;
+    background:rgb(156, 156, 158);
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.dialog_page{
+    display: flex;
+}
+.left{
+    margin: 10px;
+    height: 100%;
+    width: 30%;
+
+    padding: 5px;
+    
+}
+.right{
+    margin: 10px;
+    padding: 5px;
+    height: 100%;
+    width: 70%;
+    background: rgb(234, 236, 236);
+    border-radius: 5px;
+    border: 1px;
+}
+.send-message{
+    display: flex;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dialoggg a.active{
+    color: rgb(248, 246, 246);
+}
+.profileInfo{
+    display: flex;
+
+}
+
+.avatar_foto{
+
+    width: 100px;
 }
